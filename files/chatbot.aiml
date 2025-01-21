@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
-    
+
     <category>
         <pattern>HI</pattern>
         <template>Hi there! Please type "begin" to start.</template>
@@ -33,71 +33,96 @@
     
     <category>
         <pattern>YESBUTTON</pattern>
-        <template>Are you interested in Computer Science?
-        <button>
-            <text>YES</text>
-            <postback>CS</postback>
-        </button>
-        <button>
-            <text>NO</text>
-            <postback>nobutton1</postback>
-        </button>
+        <template>
+            Are you interested in Computer Science?
+            <button>
+                <text>YES</text>
+                <postback>CS</postback>
+            </button>
+            <button>
+                <text>NO</text>
+                <postback>nobutton1</postback>
+            </button>
+            <button>
+                <text>BACK</text>
+                <postback>BEGIN</postback>
+            </button>
         </template>
     </category>
     
     <category>
         <pattern>NOBUTTON1</pattern>
-        <template>Are you interested in Cybersecurity?
-        <button>
-            <text>YES</text>
-            <postback>CYBER</postback>
-        </button>
-        <button>
-            <text>NO</text>
-            <postback>nobutton2</postback>
-        </button>
+        <template>
+            Are you interested in Cybersecurity?
+            <button>
+                <text>YES</text>
+                <postback>CYBER</postback>
+            </button>
+            <button>
+                <text>NO</text>
+                <postback>nobutton2</postback>
+            </button>
+            <button>
+                <text>BACK</text>
+                <postback>YESBUTTON</postback>
+            </button>
         </template>
     </category>
     
     <category>
         <pattern>NOBUTTON2</pattern>
-        <template>Are you interested in Data Analysis?
-        <button>
-            <text>YES</text>
-            <postback>DATA</postback>
-        </button>
-        <button>
-            <text>NO</text>
-            <postback>nobutton3</postback>
-        </button>
+        <template>
+            Are you interested in Data Analysis?
+            <button>
+                <text>YES</text>
+                <postback>DATA</postback>
+            </button>
+            <button>
+                <text>NO</text>
+                <postback>nobutton3</postback>
+            </button>
+            <button>
+                <text>BACK</text>
+                <postback>NOBUTTON1</postback>
+            </button>
         </template>
     </category>
     
     <category>
         <pattern>NOBUTTON3</pattern>
-        <template>Are you interested in Computer Networking?
-        <button>
-            <text>YES</text>
-            <postback>NET</postback>
-        </button>
-        <button>
-            <text>NO</text>
-            <postback>nobutton4</postback>
-        </button>
+        <template>
+            Are you interested in Computer Networking?
+            <button>
+                <text>YES</text>
+                <postback>NET</postback>
+            </button>
+            <button>
+                <text>NO</text>
+                <postback>nobutton4</postback>
+            </button>
+            <button>
+                <text>BACK</text>
+                <postback>NOBUTTON2</postback>
+            </button>
         </template>
     </category>
     
     <category>
         <pattern>NOBUTTON4</pattern>
-        <template>Are you interested in Computer Software?
-        <button>
-            <text>YES</text>
-            <postback>SOFT</postback>
-        </button>
-        <button>
-            <text>NO</text>
-            <postback>unknown</postback>
-        </button>
+        <template>
+            Are you interested in Computer Software?
+            <button>
+                <text>YES</text>
+                <postback>SOFT</postback>
+            </button>
+            <button>
+                <text>NO</text>
+                <postback>unknown</postback>
+            </button>
+            <button>
+                <text>BACK</text>
+                <postback>NOBUTTON3</postback>
+            </button>
         </template>
     </category>
 
@@ -111,6 +136,10 @@
             <button>
                 <text>Learn more about Computer Science</text>
                 <url>https://www.indeed.com/career-advice/finding-a-job/what-is-a-computer-scientist</url>
+            </button>
+            <button>
+                <text>BACK</text>
+                <postback>YESBUTTON</postback>
             </button>
         </template>
     </category>
@@ -126,6 +155,10 @@
                 <text>Learn more about Cybersecurity</text>
                 <url>https://www.coursera.org/articles/cybersecurity-job-description</url>
             </button>
+            <button>
+                <text>BACK</text>
+                <postback>NOBUTTON1</postback>
+            </button>
         </template>
     </category>
     
@@ -140,6 +173,10 @@
                 <text>Learn more about Data Analyst</text>
                 <url>https://www.simplilearn.com/data-analyst-job-description-article</url>
             </button>
+            <button>
+                <text>BACK</text>
+                <postback>NOBUTTON2</postback>
+            </button>
         </template>
     </category>
     
@@ -152,6 +189,10 @@
             <button>
                 <text>Learn more about Network Engineer</text>
                 <url>https://www.indeed.com/hire/job-description/network-engineer</url>
+            </button>
+            <button>
+                <text>BACK</text>
+                <postback>NOBUTTON3</postback>
             </button>
         </template>
     </category>
@@ -166,6 +207,10 @@
             <button>
                 <text>Learn more about Software Engineer</text>
                 <url>https://www.indeed.com/hire/job-description/software-engineer</url>
+            </button>
+            <button>
+                <text>BACK</text>
+                <postback>NOBUTTON4</postback>
             </button>
         </template>
     </category>
